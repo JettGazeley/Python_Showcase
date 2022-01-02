@@ -1,6 +1,6 @@
 # Python_Showcase
 
-##sorting_routines.py
+## sorting_routines.py
 The goal of this activity was to showcase different methods of sorting algorithms in Python
 
 ## psalms.py
