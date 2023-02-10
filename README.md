@@ -1,8 +1,12 @@
-# CISC-CMPE-327
+# Python Showcase
 
 [![Pytest-All](https://github.com/beepbeep63/CISC-CMPE-327/actions/workflows/style_check.yml/badge.svg?branch=main)](https://github.com/beepbeep63/CISC-CMPE-327/actions/workflows/style_check.yml)
 
 [![Python PEP8](https://github.com/beepbeep63/CISC-CMPE-327/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/beepbeep63/CISC-CMPE-327/actions/workflows/pytest.yml)
+
+# This project was created during my software quality assurance course at Queen's University
+# Our goal for this project was to create an Airbnb clone
+The README below contains information relating to our sprint reviews and retrospectives
 
 # A4 Review and Retrospect
 
