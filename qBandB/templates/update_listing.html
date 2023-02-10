@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1> {% block title %}Update Listing{% endblock %} </h1>
+{% endblock %}
+
+{% block content %}
+<h2 id="welcome-header">Update A Listing</h2>
+<h4 id = 'message'> {{message}} </h4>
+<form method = "post">
+   <div class = "form-group">
+        <label for = "title">Previous Listing Title</label>
+        <input class = "form-control" name = "title" id="title" placeholder="Title" required><br>
+        <label for = "title">New Listing Title</label>
+        <input class = "form-control" name = "new_title" id="new_title" placeholder="New Title"><br>
+        <label for = "title">New Listing Description</label>
+        <input class = "form-control" name = "description" id="description" placeholder="New Description"><br>
+        <label for = "title">New Listing Price</label>
+        <input class = "form-control" name = "price" id="price" placeholder="New Price"><br>
+        <button href = '/' class = "btn btn-primary elem" id="btn-submit" type="submit">Update Listing</button>
+    </div>
+</form>
+<a href='/'>Return to Home Page</a>
+{% endblock %}
+

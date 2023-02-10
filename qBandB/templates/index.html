@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Home{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div>
+    <h2 id="welcome-header">Welcome {{ user.username }}!</h2>
+    <p><a href='/createlisting'>Create New Listing</a></p>
+    <p><a href="/createbooking">Create New Booking</a></p>
+    <p><a href='/updatelisting'>Update Listings</a></p>
+    <p><a href="/updateprofile">Update Profile</a></p>
+    <p><a href='/logout'>Logout</a></p>
+</div>
+<br>
+
+<h2>Browse all available products:</h2>
+
+<div id="products">
+    {% for product in products %}
+    <div>
+        <h4>Name: {{ product.title }}, Price: ${{ product.price }}</h4>
+        <p>Description: {{ product.description }}</p>
+        <br>
+    </div>
+    {% endfor %}
+    <br>
+</div>
+
+<h2>Upcoming bookings:</h2>
+ 
+<div id="bookings">
+    {% for booking in bookings %}
+    <div>
+        <h4>Listing: {{ booking.listing.title }}</h4>
+        <p>Start date: {{ booking.start_date }}, End date: {{ booking.end_date }}</p>
+        <br>
+    </div>
+    {% endfor %}
+    <br>
+</div>
+<br>
+
+{% endblock %}

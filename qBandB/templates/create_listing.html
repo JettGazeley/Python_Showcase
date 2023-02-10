@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Create New Listing{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2 id="welcome-header">Create New Listing</h2>
+<h4 id='message'>{{message}}</h4>
+<form method="post">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input class="form-control" name="title" id="title" required>
+    <label for="description">Description</label>
+    <input class="form-control" name="description" id="description" required>
+    <label for="price">Price</label>
+    <input class="form-control" type="number" name="price" id="price" required>
+    <input class="btn btn-primary" type="submit" value="Submit">
+  </div>
+</form>
+<a href='/'>Return to Home Page</a>
+{% endblock %}
